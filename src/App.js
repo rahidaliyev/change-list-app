@@ -23,7 +23,14 @@ export default class App extends React.Component {
   };
 
   handleOpenCard = (card) => {
-   
+    const array = this.state.cards;
+
+    const newArray = [
+      ...array.slice(0, this.state.cards.length),
+      {number: card.number, balance: card.balance},
+      ...array.slice(this.state.cards.length)
+    ];
+    this.setState({ cards: newArray });
     console.log(card);
   };
 
