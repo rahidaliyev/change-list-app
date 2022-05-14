@@ -1,0 +1,14 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 80px;
+  }
+  
